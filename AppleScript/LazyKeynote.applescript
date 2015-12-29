@@ -16,6 +16,8 @@ tell application "Keynote"
 	-- workaround to compare master slide name
 	set sectionSlide to master slide "Section" of the front document
 	
+	set sectionCount to 0
+	
 	-- slides loop
 	repeat with currentSlide in slides of the front document
 		
