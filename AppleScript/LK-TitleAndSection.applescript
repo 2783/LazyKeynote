@@ -18,8 +18,6 @@ tell application "Keynote"
 	
 	set sectionCount to 0
 	
-	log "Hello"
-	
 	-- slides loop
 	repeat with currentSlide in slides of the front document
 		
