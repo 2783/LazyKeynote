@@ -6,10 +6,25 @@
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>*</string>
+			</array>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
-	<string>applet</string>
+	<string>droplet</string>
 	<key>CFBundleIconFile</key>
-	<string>applet</string>
+	<string>droplet</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.apple.ScriptEditor.id.LazyKeynote</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -21,7 +36,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
-	<string>aplt</string>
+	<string>dplt</string>
 	<key>LSMinimumSystemVersionByArchitecture</key>
 	<dict>
 		<key>x86_64</key>
@@ -44,9 +59,9 @@
 		<key>positionOfDivider</key>
 		<real>740</real>
 		<key>savedFrame</key>
-		<string>365 36 788 991 0 0 1680 1027 </string>
+		<string>97 36 788 991 0 0 1680 1027 </string>
 		<key>selectedTab</key>
-		<string>description</string>
+		<string>result</string>
 	</dict>
 </dict>
 </plist>
