@@ -9,7 +9,7 @@ set keynoteFile to choose file with prompt "Choose a keynote presentation:" of t
 tell application "Keynote"
 	
 	open keynoteFile
-	
+	activate
 	-- get title of the presentation assuming it is part of the first slide default title
 	set presentationTitle to the object text of the default title item of the first slide of the front document
 	
@@ -42,12 +42,12 @@ tell application "Keynote"
 				end if
 				
 				-- add presentation title
-				if object text is equal to "title" then
+				if object text is equal to "$title" then
 					set object text to presentationTitle
 				end if
 				
 				-- add section title 
-				if object text is equal to "section" then
+				if object text is equal to "$section" then
 					set object text to currentSection
 				end if
 				

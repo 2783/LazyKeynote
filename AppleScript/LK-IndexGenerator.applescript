@@ -11,7 +11,7 @@ set keynoteFile to choose file with prompt "Choose a keynote presentation:" of t
 tell application "Keynote"
 	
 	open keynoteFile
-	
+	activate
 	
 	-- Go through all slides and save title from section slides
 	
