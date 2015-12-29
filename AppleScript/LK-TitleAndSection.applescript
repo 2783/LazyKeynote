@@ -18,6 +18,8 @@ tell application "Keynote"
 	
 	set sectionCount to 0
 	
+	log "Hello"
+	
 	-- slides loop
 	repeat with currentSlide in slides of the front document
 		
@@ -50,6 +52,7 @@ tell application "Keynote"
 				if object text is equal to "section" then
 					set object text to currentSection
 				end if
+				
 				
 			end tell
 			
