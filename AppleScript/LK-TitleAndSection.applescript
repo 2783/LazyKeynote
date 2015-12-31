@@ -26,9 +26,10 @@ tell application "Keynote"
 		
 		-- detect section slides
 		if baseSlide is equal to sectionSlide then
+		
 			set sectionCount to (sectionCount + 1)
 			set currentSection to the object text of the default title item of the currentSlide
-			set currentSection to (sectionCount as string) & ". " & currentSection
+			-- set currentSection to (sectionCount as string) & ". " & currentSection
 			
 		end if
 		
@@ -37,8 +38,8 @@ tell application "Keynote"
 			
 			tell textObject
 				-- add section number (only for Section slides)
-				if object text is equal to "0." then
-					set object text to (sectionCount as string) & "."
+				if object text is equal to "$00" then
+					set object text to (sectionCount as string)
 				end if
 				
 				-- add presentation title
@@ -57,5 +58,7 @@ tell application "Keynote"
 		end repeat
 		
 	end repeat
+	
+	beep
 	
 end tell
